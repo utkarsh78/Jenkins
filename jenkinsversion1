@@ -1,0 +1,35 @@
+pipeline { 
+    agent any
+    stages {
+        stage('Clone Git') {
+            steps {
+                echo "This is the Cloning Stage"
+            }
+        }
+        stage('Build Code') {
+            steps {
+                echo "This is the Build Stage"
+            }
+        }
+        stage('Test Code') {
+            steps {
+                echo "This is the Test Stage"
+            }
+        }
+        stage('Deliver Code') {
+            steps {
+                echo "This is the Deliver Stage"
+            }
+        }
+        stage('Deployment Code') {
+            steps {
+                echo "This is the Deployment Stage"
+            }
+        }
+        stage('Monitoring') {
+            steps {
+                echo "This is the Monitoring Stage"
+            }
+        }
+    } 
+}
